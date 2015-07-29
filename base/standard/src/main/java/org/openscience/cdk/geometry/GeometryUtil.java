@@ -886,7 +886,8 @@ public final class GeometryUtil {
                 bondLengthSum += getLength2D(bond);
             }
         }
-        return bondLengthSum / bondCounter;
+        //Lihua changed here for showing disconnected compounds structure
+        return bondCounter==0? bondLengthSum : bondLengthSum / bondCounter;
     }
 
     /**

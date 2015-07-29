@@ -162,7 +162,8 @@ public class OverlapResolver {
     public double getOverlapScore(IAtomContainer ac, Vector overlappingAtoms, Vector overlappingBonds) {
         double overlapScore = 0;
         overlapScore = getAtomOverlapScore(ac, overlappingAtoms);
-        //overlapScore += getBondOverlapScore(ac, overlappingBonds);
+        //Lihua changed
+        overlapScore += getBondOverlapScore(ac, overlappingBonds);
         return overlapScore;
     }
 
